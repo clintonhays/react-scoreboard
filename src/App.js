@@ -1,0 +1,17 @@
+import { render } from '@testing-library/react';
+import React from 'react';
+
+const title = React.createElement(
+  'h1',
+  {
+    id    : 'main-title',
+    title : 'This is a title.'
+  },
+  'My first React Element! Yeah!'
+);
+
+function App () {
+  return title;
+}
+
+export default App;
