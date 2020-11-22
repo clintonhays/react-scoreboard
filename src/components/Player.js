@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import Icon from './Icon';
 import Counter from './Counter';
 
 class Player extends PureComponent {
@@ -10,16 +11,18 @@ class Player extends PureComponent {
     id           : PropTypes.number.isRequired,
     score        : PropTypes.number,
     index        : PropTypes.number,
+    isHiScore    : PropTypes.bool,
   };
 
   render () {
-    const { name, id, score, index, removePlayer, changeScore } = this.props;
+    const { name, id, score, index, removePlayer, changeScore, isHiScore } = this.props;
     return (
       <div className="player">
         <span className="player-name">
           <button className="remove-player" onClick={() => removePlayer(id)}>
             ✖
           </button>
+          <Icon isHiScore={isHiScore} />
           {name}
         </span>
 
