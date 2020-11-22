@@ -1,7 +1,7 @@
 /* ELEMENT STYLES -------------------- */
 
 body {
-  background: #e8e7e7;
+  background: #5d6266;
   font-family: arial;
   text-transform: uppercase;
 }
@@ -12,7 +12,7 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #8063fa;
+  background-color: #202528;
   border-bottom: solid 2px #d4caff;
 }
 
@@ -27,7 +27,7 @@ header h1 {
 
 form {
   display: flex;
-  background-color: #8063fa;
+  background-color: #202528;
 }
 
 input[type=text] {
@@ -36,17 +36,17 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5b45b9;
+  background-color: #474d51;
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
-  color: #c7bcf8;
+  color: #eee;
   letter-spacing: 2px;
   outline: none;
 }
 
 input[type=text]::-webkit-input-placeholder {
-  color: #c7bcf8;
+  color: #eee;
   letter-spacing: 2px;
 }
 
@@ -59,7 +59,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0;
   padding: 10px;
-  background-color: #44338d;
+  background-color: #0f1214;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -103,7 +103,7 @@ svg {
   background: #fff;
   width: 700px;
   margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(133, 104, 250);
+  box-shadow: 0 2px 0 rgba(71, 77, 8, 0.8);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -116,7 +116,7 @@ svg {
 }
 
 .player:last-of-type {
-  border-bottom-color: #d4caff;
+  border-bottom-color: rgba(71, 77, 8, 0.8);
 }
 
 .player-name:hover .remove-player {
@@ -170,7 +170,7 @@ svg {
 .stopwatch {
   padding: 15px 10px 5px 10px;
   margin: -5px -10px -5px 10px;
-  background: #5b45b9;
+  background: #474d51;
 }
 
 .stopwatch-time {
@@ -181,7 +181,7 @@ svg {
 
 .stopwatch button {
   margin: 8px 5px;
-  background-color: #44338d;
+  background-color: #0f1214;
   border-radius: 5px;
   padding: 7px 8px;
   border: none;
@@ -195,7 +195,7 @@ svg {
 .stopwatch button:hover,
 input[type=submit]:hover {
   background: #fff;
-  color: #44338d;
+  color: #0f1214;
   cursor: pointer;
 }
 
