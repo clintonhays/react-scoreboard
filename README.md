@@ -7,9 +7,3 @@ I learned a lot of the higher concepts of React. It proved to be a very useful t
 Of Particular interest to me is the breaking down of an app into it's base components. I find it easier to understand how an app works when it is broken into smaller chunks.
 
 The app employs many of the concepts necessary for larger React apps despite it's small size.
-
-<<<<<<< HEAD
-I'm looking forward to expanding my knowledge of React!
-=======
-I'm looking forward to expanding my knowledge of React!
->>>>>>> c024b38613c7402cf646a8a3018928f9e2ff2ee1
