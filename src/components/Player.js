@@ -11,7 +11,12 @@ const Player = (props) => {
 				{props.name}
 			</span>
 
-			<Counter />
+			<Counter
+				/* prettier ignore */
+				score={props.score}
+				index={props.index}
+				changeScore={props.changeScore}
+			/>
 		</div>
 	);
 };

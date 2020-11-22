@@ -6,22 +6,34 @@ class App extends Component {
 	state = {
 		players : [
 			{
-				name : 'Clinton',
-				id   : 1,
+				name  : 'Clinton',
+				score : 0,
+				id    : 1,
 			},
 			{
-				name : 'Rhi',
-				id   : 2,
+				name  : 'Rhi',
+				score : 0,
+				id    : 2,
 			},
 			{
-				name : 'Mark',
-				id   : 3,
+				name  : 'Mark',
+				score : 0,
+				id    : 3,
 			},
 			{
-				name : 'Amanda',
-				id   : 4,
+				name  : 'Amanda',
+				score : 0,
+				id    : 4,
 			},
 		],
+	};
+
+	handleScoreChange = (index, delta) => {
+		this.setState((prevState) => {
+			return {
+				score : (prevState.players[index].score += delta),
+			};
+		});
 	};
 
 	handleRemovePlayer = (id) => {
@@ -42,12 +54,15 @@ class App extends Component {
 				/>
 
 				{/* Player List */}
-				{this.state.players.map((player) => (
+				{this.state.players.map((player, index) => (
 					<Player
 						/* prettier ignore */
 						name={player.name}
+						score={player.score}
 						id={player.id}
 						key={player.id.toString()}
+						index={index}
+						changeScore={this.handleScoreChange}
 						removePlayer={this.handleRemovePlayer}
 					/>
 				))}
