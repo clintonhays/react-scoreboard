@@ -68,7 +68,6 @@ class App extends Component {
       <div className="scoreboard">
         <Header
           /* prettier ignore */
-          title="Scoreboard"
           players={this.state.players}
         />
 
