@@ -1,5 +1,5 @@
-import React from 'react';
-import './app.css';
+import React from "react";
+import "./app.css";
 
 const Header = (props) => {
   return (
@@ -10,33 +10,44 @@ const Header = (props) => {
   );
 };
 
-const Player = () => {
+const Player = (props) => {
   return (
     <div className="player">
-      <span className="player-name">Clinton</span>
+      <span className="player-name">{props.name}</span>
 
-      <Counter />
+      <Counter score={props.score} />
     </div>
   );
 };
 
-const Counter = () => {
+const Counter = (props) => {
   return (
     <div className="counter">
       <button className="counter-action decremement"> - </button>
-      <span className="counter-score"> 10 </span>
+      <span className="counter-score"> {props.score} </span>
       <button className="counter-action incremement"> + </button>
     </div>
   );
 };
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="scoreboard">
-      <Header title="Scoreboard" totalPlayers={1} />
+      <Header
+        /* prettier ignore */
+        title="Scoreboard"
+        totalPlayers={props.initialPlayers.length}
+      />
 
       {/* Player List */}
-      <Player />
+      {props.initialPlayers.map((player) => (
+        <Player
+          /* prettier ignore */
+          name={player.name}
+          score={player.score}
+          key={player.key.toString()}
+        />
+      ))}
     </div>
   );
 };
