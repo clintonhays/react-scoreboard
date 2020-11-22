@@ -8,4 +8,8 @@ Of Particular interest to me is the breaking down of an app into it's base compo
 
 The app employs many of the concepts necessary for larger React apps despite it's small size.
 
+<<<<<<< HEAD
 I'm looking forward to expanding my knowledge of React!
+=======
+I'm looking forward to expanding my knowledge of React!
+>>>>>>> c024b38613c7402cf646a8a3018928f9e2ff2ee1
